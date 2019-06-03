@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_centerHorizontal="true">
+
+    <TimePicker
+        android:id="@+id/TimePicker"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    </TimePicker>
+
+    <Button
+        android:id="@+id/btnHenGio"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/TimePicker"
+        android:layout_alignParentStart="true"
+        android:text="Hẹn Giờ" />
+
+    <Button
+        android:id="@+id/btnDung"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/TimePicker"
+        android:layout_alignParentEnd="true"
+        android:text="Dừng" />
+
+    <TextView
+        android:id="@+id/txtHienThi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btnHenGio"
+        android:layout_centerHorizontal="true"
+        android:textColor="#E21C0E"
+        android:text="HIỂN THỊ" />
+</RelativeLayout>
+
+</android.support.constraint.ConstraintLayout>
